@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+  background: #242c39;
+  color: #fff;
+}
+
+.top_bar {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+  padding: 30px 0 0 20px;
+  margin-bottom: 20px;
+}
+
+.top_bar .profile {
+  position: relative;
+  background-position: 50%;
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.top_bar .usuario {
+  position: relative;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.top_bar .usuario:nth-child(1) .profile{
+  background-image: url('https://instagram.ffor10-1.fna.fbcdn.net/v/t51.2885-19/11934906_1522712631352028_750508576_a.jpg?_nc_ht=instagram.ffor10-1.fna.fbcdn.net&_nc_ohc=KPgIzPNG1dMAX9I2n3i&oh=414864f276a6f04048652ac308f868b2&oe=5F9E73AA');
+}
+.top_bar .usuario:nth-child(2) .profile{
+  background-image: url('https://instagram.ffor10-1.fna.fbcdn.net/v/t51.2885-19/s320x320/99077730_3193648554012909_4074762377113894912_n.jpg?_nc_ht=instagram.ffor10-1.fna.fbcdn.net&_nc_ohc=aOelbNvBWqwAX9Wa945&oh=c62d5ce5b1733e39e86ad666376f06bd&oe=5F9E6841');
+}
+.top_bar .usuario:nth-child(3) .profile{
+  background-image: url('https://instagram.ffor10-1.fna.fbcdn.net/v/t51.2885-19/s320x320/97162399_1525326980975483_6270401121127235584_n.jpg?_nc_ht=instagram.ffor10-1.fna.fbcdn.net&_nc_ohc=Hol36LaYYUgAX8JbTH9&oh=143664b674e29e9c253739f90b9ad540&oe=5F9EC364');
+}
+.top_bar .usuario:nth-child(4) .profile{
+  background-image: url('https://instagram.ffor10-1.fna.fbcdn.net/v/t51.2885-19/s320x320/64293872_2539614352740052_2521121480352202752_n.jpg?_nc_ht=instagram.ffor10-1.fna.fbcdn.net&_nc_ohc=MIpO8P8DQIEAX-ykIM3&oh=49cfba08543b3b2de49fccb1641902c8&oe=5F9EAE0A');
+}
+.top_bar .usuario:nth-child(5) .profile{
+  background-image: url('https://instagram.ffor10-1.fna.fbcdn.net/v/t51.2885-19/s320x320/92667045_231681231280964_8356860069899403264_n.jpg?_nc_ht=instagram.ffor10-1.fna.fbcdn.net&_nc_ohc=R9u2FShBqUgAX-546LM&oh=09ac683d464d0ff28354916a3bff6327&oe=5F9D119D');
+}
+.top_bar .usuario:nth-child(6) .profile{
+  background-image: url('https://instagram.ffor10-1.fna.fbcdn.net/v/t51.2885-19/s320x320/67821754_2399463020314668_3192442039996252160_n.jpg?_nc_ht=instagram.ffor10-1.fna.fbcdn.net&_nc_ohc=XZOLQycCawQAX9nUOFL&oh=fd457155fbf3dd4a6b676649151132f9&oe=5F9DFB77');
+}
+.top_bar .usuario:nth-child(7) .profile{
+  background-image: url('https://instagram.ffor10-1.fna.fbcdn.net/v/t51.2885-19/s320x320/120156860_603519250314953_6782386985700640873_n.jpg?_nc_ht=instagram.ffor10-1.fna.fbcdn.net&_nc_ohc=UoAoiylwJ1UAX-v2WP9&oh=0f3592a229e4dfbd0008d7664482c4ef&oe=5F9D8521');
+}
+.top_bar .usuario:nth-child(8) .profile{
+  background-image: url('https://instagram.ffor10-1.fna.fbcdn.net/v/t51.2885-19/s320x320/109758357_282132253006276_153087952111464144_n.jpg?_nc_ht=instagram.ffor10-1.fna.fbcdn.net&_nc_ohc=sMbkW2JKxhYAX9JmTA5&oh=796c884c3c1fb055b8eec721481f20ca&oe=5F9F32F5');
+}
+
+.top_bar .profile::before {
+  content: '';
+  display: inline-block;
+  border: 3px solid #454d5a;
+  padding: 24px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.top_bar .usuario .nome {
+  font-size: 12px;
+  padding-top: 20px;
+  
+}
+
+ .active .profile:before{
+  border-color: #ffdf3b !important;
+}
+
+.active span {
+  background: #ffdf3b;
+  color: #000;
+  width: 50px;
+  display: inline-block;
+  font-size: 10px;
+  border-radius: 50px;
+  padding: 2px 0;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.active i{
+  padding-right: 3px;
+}
+
+.feed {
+  padding: 0 20px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background: #242c39;
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.card .foto1 {
+  background-image: url('https://lh5.googleusercontent.com/-u4eb9dk13G4/UTYcmFdIkOI/AAAAAAAAAp8/ReIsgZw8C8E/s1022/copacabana+cacha%C3%A7a+ping+caninha+marafa+mangua%C3%A7a+bond+buteco+galeto+sat%27s.jpg');
+  background-position: 50%;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card .foto2 {
+  background-image: url('https://instagram.ffor10-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/119458870_327885981658678_976799185279263660_n.jpg?_nc_ht=instagram.ffor10-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=d1Ij7l_SP3UAX-jEmBt&_nc_tp=15&oh=1ceee54df9267c9ae65fbf9d57beed17&oe=5FA0347B');
+  background-position: 50%;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card .conteudo {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 10px;
+}
+
+.card .header {
+  display: flex;
+  align-items: center;
+}
+
+.card .profile1 {
+  background-image: url('https://instagram.ffor10-1.fna.fbcdn.net/v/t51.2885-19/s320x320/97162399_1525326980975483_6270401121127235584_n.jpg?_nc_ht=instagram.ffor10-1.fna.fbcdn.net&_nc_ohc=Hol36LaYYUgAX8JbTH9&oh=143664b674e29e9c253739f90b9ad540&oe=5F9EC364');
+  background-position: 50%;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.card .profile2 {
+  background-image: url('https://instagram.ffor10-1.fna.fbcdn.net/v/t51.2885-19/s320x320/92667045_231681231280964_8356860069899403264_n.jpg?_nc_ht=instagram.ffor10-1.fna.fbcdn.net&_nc_ohc=R9u2FShBqUgAX-546LM&oh=09ac683d464d0ff28354916a3bff6327&oe=5F9D119D');
+  background-position: 50%;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.card .profile3 {
+  background-image: url('https://instagram.ffor10-1.fna.fbcdn.net/v/t51.2885-19/s320x320/120156860_603519250314953_6782386985700640873_n.jpg?_nc_ht=instagram.ffor10-1.fna.fbcdn.net&_nc_ohc=UoAoiylwJ1UAX-v2WP9&oh=0f3592a229e4dfbd0008d7664482c4ef&oe=5F9D8521');
+  background-position: 50%;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.card .profile4 {
+  background-image: url('https://instagram.ffor10-1.fna.fbcdn.net/v/t51.2885-19/s320x320/64293872_2539614352740052_2521121480352202752_n.jpg?_nc_ht=instagram.ffor10-1.fna.fbcdn.net&_nc_ohc=MIpO8P8DQIEAX-ykIM3&oh=49cfba08543b3b2de49fccb1641902c8&oe=5F9EAE0A');
+  background-position: 50%;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.card .detalhes {
+  margin-left: 10px;
+}
+
+.card .postado {
+  font-size: 10px;
+  padding-top: 3px;
+}
+
+.card .desc {
+  padding-top: 10px;
+  line-height: 1.5;
+
+}
+
+.card .tags {
+  font-size: 14px;
+  color: #ffdf3b;
+  padding-top: 10px;
+}
+
+.card .footer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.nav {
+  background: #242c39;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 -4px 25px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav .icon {
+  flex: 1;
+  text-align: center;
+  color: #8e919a;
+  font-size: 12px;
+}
+
+.nav .icon i{
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.selected {
+  color: #ffdf3b !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.space {
+  height: 100px;
+}
